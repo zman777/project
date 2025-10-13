@@ -6,8 +6,7 @@
 
 <script setup lang="ts">
 for (let i = 0; i < 1000000000; i++) {
-  console.log(i);
-
+  console.log(i)
 }
 </script>
 
