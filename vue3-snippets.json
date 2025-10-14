@@ -1,0 +1,155 @@
+{
+  "Vue 3 Setup Component": {
+    "prefix": "v3setup",
+    "body": [
+      "<template>",
+      "  <div class=\"$1\">",
+      "    $2",
+      "  </div>",
+      "</template>",
+      "",
+      "<script setup lang=\"ts\">",
+      "$3",
+      "</script>",
+      "",
+      "<style scoped>",
+      "$4",
+      "</style>"
+    ],
+    "description": "Vue 3 基础组件结构"
+  },
+  "Vue 3 Setup with Props": {
+    "prefix": "v3props",
+    "body": [
+      "<template>",
+      "  <div class=\"$1\">",
+      "    $2",
+      "  </div>",
+      "</template>",
+      "",
+      "<script setup lang=\"ts\">",
+      "interface Props {",
+      "  $3",
+      "}",
+      "",
+      "const props = defineProps<Props>()",
+      "$4",
+      "</script>",
+      "",
+      "<style scoped>",
+      "$5",
+      "</style>"
+    ],
+    "description": "Vue 3 带 Props 的组件"
+  },
+  "Vue 3 Setup with Emit": {
+    "prefix": "v3emit",
+    "body": [
+      "<template>",
+      "  <div class=\"$1\">",
+      "    $2",
+      "  </div>",
+      "</template>",
+      "",
+      "<script setup lang=\"ts\">",
+      "interface Emits {",
+      "  $3",
+      "}",
+      "",
+      "const emit = defineEmits<Emits>()",
+      "$4",
+      "</script>",
+      "",
+      "<style scoped>",
+      "$5",
+      "</style>"
+    ],
+    "description": "Vue 3 带 Emit 的组件"
+  },
+  "Vue 3 Complete Setup": {
+    "prefix": "v3full",
+    "body": [
+      "<template>",
+      "  <div class=\"$1\">",
+      "    $2",
+      "  </div>",
+      "</template>",
+      "",
+      "<script setup lang=\"ts\">",
+      "import { ref, reactive, computed, onMounted } from 'vue'",
+      "",
+      "interface Props {",
+      "  $3",
+      "}",
+      "",
+      "interface Emits {",
+      "  $4",
+      "}",
+      "",
+      "const props = defineProps<Props>()",
+      "const emit = defineEmits<Emits>()",
+      "",
+      "// 响应式数据",
+      "const $5 = ref('')",
+      "",
+      "// 计算属性",
+      "const $6 = computed(() => {",
+      "  return $7",
+      "})",
+      "",
+      "// 生命周期",
+      "onMounted(() => {",
+      "  $8",
+      "})",
+      "</script>",
+      "",
+      "<style scoped>",
+      "$9",
+      "</style>"
+    ],
+    "description": "Vue 3 完整组件模板"
+  },
+  "Vue 3 Ref": {
+    "prefix": "vref",
+    "body": [
+      "const $1 = ref($2)"
+    ],
+    "description": "Vue 3 ref"
+  },
+  "Vue 3 Reactive": {
+    "prefix": "vreactive",
+    "body": [
+      "const $1 = reactive({",
+      "  $2",
+      "})"
+    ],
+    "description": "Vue 3 reactive"
+  },
+  "Vue 3 Computed": {
+    "prefix": "vcomputed",
+    "body": [
+      "const $1 = computed(() => {",
+      "  return $2",
+      "})"
+    ],
+    "description": "Vue 3 computed"
+  },
+  "Vue 3 Watch": {
+    "prefix": "vwatch",
+    "body": [
+      "watch($1, (newVal, oldVal) => {",
+      "  $2",
+      "})"
+    ],
+    "description": "Vue 3 watch"
+  },
+  "Vue 3 onMounted": {
+    "prefix": "vmounted",
+    "body": [
+      "onMounted(() => {",
+      "  $1",
+      "})"
+    ],
+    "description": "Vue 3 onMounted"
+  }
+}
