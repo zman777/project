@@ -4,7 +4,7 @@
     <el-button type="success" size="small" :icon="Edit">编辑</el-button>
     <el-button type="danger" size="default" :icon="Delete">删除</el-button>
     <!-- 使用 SVG 图标 -->
-    <div style="margin-top: 20px;">
+    <div style="margin-top: 20px">
       <h3>SVG 图标演示：</h3>
       <Pagination />
       <SvgIcon name="phone" color="#f56c6c" />

@@ -111,45 +111,27 @@
   },
   "Vue 3 Ref": {
     "prefix": "vref",
-    "body": [
-      "const $1 = ref($2)"
-    ],
+    "body": ["const $1 = ref($2)"],
     "description": "Vue 3 ref"
   },
   "Vue 3 Reactive": {
     "prefix": "vreactive",
-    "body": [
-      "const $1 = reactive({",
-      "  $2",
-      "})"
-    ],
+    "body": ["const $1 = reactive({", "  $2", "})"],
     "description": "Vue 3 reactive"
   },
   "Vue 3 Computed": {
     "prefix": "vcomputed",
-    "body": [
-      "const $1 = computed(() => {",
-      "  return $2",
-      "})"
-    ],
+    "body": ["const $1 = computed(() => {", "  return $2", "})"],
     "description": "Vue 3 computed"
   },
   "Vue 3 Watch": {
     "prefix": "vwatch",
-    "body": [
-      "watch($1, (newVal, oldVal) => {",
-      "  $2",
-      "})"
-    ],
+    "body": ["watch($1, (newVal, oldVal) => {", "  $2", "})"],
     "description": "Vue 3 watch"
   },
   "Vue 3 onMounted": {
     "prefix": "vmounted",
-    "body": [
-      "onMounted(() => {",
-      "  $1",
-      "})"
-    ],
+    "body": ["onMounted(() => {", "  $1", "})"],
     "description": "Vue 3 onMounted"
   }
 }

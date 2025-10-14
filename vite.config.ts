@@ -12,9 +12,9 @@ export default defineConfig(({ command }) => {
       vue(),
       // Mock 插件配置
       viteMockServe({
-        mockPath: 'mock',                    // mock 文件目录
-        enable: command === 'serve',        // 只在开发环境启用
-        logger: true,                       // 显示 mock 请求日志
+        mockPath: 'mock', // mock 文件目录
+        enable: command === 'serve', // 只在开发环境启用
+        logger: true, // 显示 mock 请求日志
       }),
       //引入svg插件
       createSvgIconsPlugin({

@@ -12,7 +12,7 @@ export const isDev = () => {
   return import.meta.env.DEV
 }
 
-// 是否生产环境  
+// 是否生产环境
 export const isProd = () => {
   return import.meta.env.PROD
 }
