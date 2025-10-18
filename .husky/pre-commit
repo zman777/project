@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+# 只执行 Prettier 格式化（快速且不会失败）
 pnpm run format

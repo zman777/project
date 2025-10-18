@@ -1,8 +1,7 @@
 *,
-*:after,
-*:before {
+*::after,
+*::before {
     box-sizing: border-box;
-
     outline: none;
 }
 
@@ -87,14 +86,11 @@ time,
 mark,
 audio,
 video {
+    padding: 0;
+    margin: 0;
     font: inherit;
     font-size: 100%;
-
-    margin: 0;
-    padding: 0;
-
     vertical-align: baseline;
-
     border: 0;
 }
 
@@ -125,8 +121,8 @@ blockquote,
 q {
     quotes: none;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
         content: '';
         content: none;
     }
@@ -134,11 +130,9 @@ q {
 
 sub,
 sup {
+    position: relative;
     font-size: 75%;
     line-height: 0;
-
-    position: relative;
-
     vertical-align: baseline;
 }
 
@@ -158,16 +152,14 @@ table {
 input,
 textarea,
 button {
-    font-family: inhert;
     font-size: inherit;
-
+    font-family: inhert;
     color: inherit;
 }
 
 select {
-    text-indent: .01px;
     text-overflow: '';
-
+    text-indent: .01px;
     border: 0;
     border-radius: 0;
 
@@ -179,6 +171,6 @@ select::-ms-expand {
 
 code,
 pre {
-    font-family: monospace, monospace;
     font-size: 1em;
+    font-family: monospace, monospace;
 }
